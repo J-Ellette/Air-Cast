@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AirCast Bridge</string>
+    <string name="tab_cast">Cast</string>
+    <string name="tab_stage">Stage</string>
+    <string name="tab_spoof">Spoof ID</string>
+    <string name="notification_channel_screen">Screen Mirroring</string>
+    <string name="notification_channel_media">Media Streaming</string>
+    <string name="action_stop_cast">Stop Casting</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+</resources>

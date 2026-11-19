@@ -1,0 +1,6 @@
+{
+  "name": "AirCast Bridge",
+  "description": "Stream video, photos, music, and live device screen mirroring to Apple TV, smart TVs, and AirPlay speakers with customizable Apple client identity spoofing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
