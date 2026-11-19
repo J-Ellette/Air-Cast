@@ -455,6 +455,13 @@ class AirPlayClient {
                 }
             }
 
+            if (profile.protocolMode == AirPlayProtocolMode.AIRPLAY_2) {
+                closePersistentConnection(receiver.host, receiver.port)
+                return@withContext AirPlayResult.Failure(
+                    "The receiver did not complete AirPlay 2 PIN pairing. No verified HAP session was established."
+                )
+            }
+
             // Fallback for AirPlay 1 / third-party receivers expecting bplist00 PIN payload
             if (!conn.isOpen) {
                 conn = openFreshPersistentConnection(receiver.host, receiver.port, timeoutMs = 12_000)
